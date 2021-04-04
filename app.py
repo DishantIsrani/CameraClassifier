@@ -10,6 +10,7 @@ class App:
     def __init__(self, window=tk.Tk(), window_title="Dishant's camera classifier"):
         self.window = window
         self.window_title = window_title
+        self.window.configure(bg='#577399')
         self.counters=[1, 1]
         self.model = model.Model()
         self.auto_predict = False
